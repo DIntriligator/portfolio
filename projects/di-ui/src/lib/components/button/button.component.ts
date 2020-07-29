@@ -8,7 +8,8 @@ import { DiColorType } from '../../types/color-types';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DIButtonComponent {
-  @Input() colorType: DiColorType = 'DEFAULT';
+  @Input() theme: DiColorType = 'default';
+  @Input() disabled = false;
 
   @Output() buttonClick = new EventEmitter<void>();
 
