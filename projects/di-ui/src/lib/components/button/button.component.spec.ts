@@ -1,27 +1,27 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { DIButtonModule } from './button.module';
-import { DIButtonComponent } from './button.component';
+import { UIButtonModule } from './button.module';
+import { UIButtonComponent } from './button.component';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 describe('ButtonComponent', () => {
-  let component: DIButtonComponent;
-  let fixture: ComponentFixture<DIButtonComponent>;
+  let component: UIButtonComponent;
+  let fixture: ComponentFixture<UIButtonComponent>;
   let buttonDe: DebugElement;
   let buttonEl: any;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ DIButtonModule ]
+      imports: [ UIButtonModule ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DIButtonComponent);
+    fixture = TestBed.createComponent(UIButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    buttonDe = fixture.debugElement.query(By.css('.di-button'));
+    buttonDe = fixture.debugElement.query(By.css('.ui-button'));
     buttonEl = buttonDe.nativeElement;
   });
 

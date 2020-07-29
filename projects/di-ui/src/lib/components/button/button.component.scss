@@ -1,6 +1,6 @@
 @import "../../theme/theme.scss";
 
-.di-button {
+.ui-button {
     padding: 5px 20px;
     margin: 0 5px;
     border: none;
@@ -16,7 +16,7 @@
     }
 }
 
-.di-button.primary {
+.ui-button.primary {
     background-color: $primary;
     color: #fff;
     &:hover {
@@ -24,7 +24,7 @@
     }
 }
 
-.di-button.danger {
+.ui-button.danger {
     background-color: $danger;
     color: #fff;
     &:hover {
@@ -32,7 +32,7 @@
     }
 }
 
-.di-button.success {
+.ui-button.success {
     background-color: $success;
     color: #fff;
     &:hover {
