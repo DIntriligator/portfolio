@@ -1,3 +1,29 @@
-<ui-site-wrapper>
-  <h1>Home</h1>
+<ui-site-wrapper
+  [smallSize]="true"
+>
+  <ui-card>
+    <ui-card-title>
+      <h1>ABOUT ME</h1>
+    </ui-card-title>
+
+    <div class="flex">
+      <ui-card-image
+        [source]="'/assets/profile.jpeg'"
+      ></ui-card-image>
+
+      <span>
+        <p>
+            I am a <b>software engineer</b> with an eye for <b>clean UI</b> and <b>maintainable code</b>. I have a strong knowledge of <b>Javascript</b> and the latest <b>JavaScript</b> frameworks such as <b>Angular</b> and <b>React.</b> I also have an extensive understanding of <b>HTML5</b> and <b>CSS3.</b> 
+        </p>
+
+        <p>
+          When working with a team, <b>communication</b> and <b>approachability</b> are the most important skills to have and I pride myself in being the go to person for help when needed. 
+        </p>
+
+        <p>
+          Please take a moment to go through the showcase to see some of my <b>accomplishments</b> and when you think you've seen enough to know I'd be a great addition to you team, please visit the contact page for a copy of my <b>resume</b>!
+        </p>
+      </span>
+    </div>
+  </ui-card>
 </ui-site-wrapper>

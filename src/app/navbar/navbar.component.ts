@@ -26,5 +26,4 @@ export class NavbarComponent {
   private navigate(route: RouteType) {
     this.navigation.navigate(route);
   }
-
 }

@@ -1,0 +1,14 @@
+@import "../../../theme/theme.scss";
+
+.ui-card-title {
+    margin-bottom: 20px;
+    color: #fff;
+
+    .ui-card-title-inner {
+        display: inline-block;
+        background-color: $primary;
+        padding: 5px 50px;
+        margin-left: -40px;
+        border-radius: 5px;
+    }
+}
