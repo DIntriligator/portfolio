@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { RouteType, NavigationService } from '../../shared/navigation-service/navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -6,11 +7,9 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./home.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor(
+  ) { }
 
 }
