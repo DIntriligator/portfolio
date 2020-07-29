@@ -139,7 +139,7 @@
       "root": "projects/di-ui",
       "sourceRoot": "projects/di-ui/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "ui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

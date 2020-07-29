@@ -20,11 +20,14 @@
     ],
     "paths": {
       "di-ui": [
-        "dist/di-ui"
-      ],
-      "di-ui/*": [
-        "dist/di-ui/*"
+        "projects/di-ui/src/public_api"
       ]
+      // "di-ui": [
+      //   "dist/di-ui"
+      // ],
+      // "di-ui/*": [
+      //   "dist/di-ui/*"
+      // ]
     }
   }
 }
