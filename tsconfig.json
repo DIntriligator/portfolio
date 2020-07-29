@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "di-ui": [
+        "dist/di-ui"
+      ],
+      "di-ui/*": [
+        "dist/di-ui/*"
+      ]
+    }
   }
 }
