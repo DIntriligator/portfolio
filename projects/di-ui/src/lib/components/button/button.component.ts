@@ -9,6 +9,7 @@ import { DiColorType } from '../../types/color-types';
 })
 export class DIButtonComponent {
   @Input() theme: DiColorType = 'default';
+  @Input() icon = '';
   @Input() disabled = false;
 
   @Output() buttonClick = new EventEmitter<void>();

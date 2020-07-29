@@ -2,10 +2,12 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DIButtonModule } from './button.module';
 import { DIButtonComponent } from './button.component';
 import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
 describe('ButtonComponent', () => {
   let component: DIButtonComponent;
   let fixture: ComponentFixture<DIButtonComponent>;
+  let buttonDe: DebugElement;
   let buttonEl: any;
 
   beforeEach(async(() => {
@@ -19,7 +21,8 @@ describe('ButtonComponent', () => {
     fixture = TestBed.createComponent(DIButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    buttonEl = fixture.debugElement.query(By.directive(DIButtonComponent)).nativeElement;
+    buttonDe = fixture.debugElement.query(By.css('.di-button'));
+    buttonEl = buttonDe.nativeElement;
   });
 
   it('should create', () => {
