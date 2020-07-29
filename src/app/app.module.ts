@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UIButtonModule } from '../../projects/di-ui/src/lib/components/button/button.module';
-import { UISiteWrapperModule } from '../../projects/di-ui/src/lib/components/site-wrapper/site-wrapper.module';
+import { NavbarModule } from './navbar/navbar.module';
+import { HomeModule } from './home/home.module';
+import { LocationStrategy, HashLocationStrategy, APP_BASE_HREF } from '@angular/common';
+import { WorkModule } from './work/work.module';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,15 @@ import { UISiteWrapperModule } from '../../projects/di-ui/src/lib/components/sit
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UIButtonModule,
-    UISiteWrapperModule
+    NavbarModule,
+    HomeModule,
+    WorkModule,
+    ContactModule
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: APP_BASE_HREF, useValue: '/' },
+  ],
   bootstrap: [AppComponent],
   exports: [AppComponent]
 })
