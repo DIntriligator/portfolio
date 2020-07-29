@@ -1,5 +1,6 @@
 <button
     class="di-button"
+    
     [ngClass]="{
         'primary': theme === 'primary',
         'danger': theme === 'danger',
@@ -8,5 +9,10 @@
     [disabled]="disabled"
     (click)="onButtonClick()"
 >
+    <span 
+        *ngIf="icon"
+        class="fa fa-{{icon}}"
+    ></span>
+
     <ng-content></ng-content>
 </button>
