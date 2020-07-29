@@ -1,5 +1,8 @@
+@import "../../theme/theme.scss";
+
 .di-button {
     padding: 5px 20px;
+    margin: 0 5px;
     border: none;
     background-color: #ddd;
     font-weight: bold;
@@ -10,5 +13,29 @@
     }
     &:focus {
         outline: none;
+    }
+}
+
+.di-button.primary {
+    background-color: $primary;
+    color: #fff;
+    &:hover {
+        background-color: darken($primary, 5%);
+    }
+}
+
+.di-button.danger {
+    background-color: $danger;
+    color: #fff;
+    &:hover {
+        background-color: darken($danger, 5%);
+    }
+}
+
+.di-button.success {
+    background-color: $success;
+    color: #fff;
+    &:hover {
+        background-color: darken($success, 5%);
     }
 }

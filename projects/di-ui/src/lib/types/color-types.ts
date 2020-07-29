@@ -1,1 +1,1 @@
-export type DiColorType = 'DEFAULT' | 'PRIMARY' | 'DANGER' | 'SUCCESS';
+export type DiColorType = 'default' | 'primary' | 'danger' | 'success';
