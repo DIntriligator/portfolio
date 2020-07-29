@@ -6,8 +6,12 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test:ui": "ng test --project di-ui",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build_lib": "ng build di-ui",
+    "npm_pack": "cd dist/di-ui && npm pack",
+    "package": "npm run build_lib && npm run npm_pack"
   },
   "private": true,
   "dependencies": {
@@ -19,11 +23,14 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "@fortawesome/angular-fontawesome": "^0.3.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
+    "stratnav": "file:libs/stratnav-0.0.2.tgz",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26",
-    "stratnav": "file:libs/stratnav-0.0.2.tgz"
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
