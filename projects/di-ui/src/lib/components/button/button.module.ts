@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DIButtonComponent } from './button.component';
+import { UIButtonComponent } from './button.component';
 
 @NgModule({
-  declarations: [DIButtonComponent],
+  declarations: [UIButtonComponent],
   imports: [
     CommonModule
   ],
-  exports: [DIButtonComponent]
+  exports: [UIButtonComponent]
 })
-export class DIButtonModule { }
+export class UIButtonModule { }

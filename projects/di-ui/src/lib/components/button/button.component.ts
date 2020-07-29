@@ -2,12 +2,12 @@ import { Component, OnInit, ChangeDetectionStrategy, Output, EventEmitter, Input
 import { DiColorType } from '../../types/color-types';
 
 @Component({
-  selector: 'di-button',
+  selector: 'ui-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class DIButtonComponent {
+export class UIButtonComponent {
   @Input() theme: DiColorType = 'default';
   @Input() icon = '';
   @Input() disabled = false;
