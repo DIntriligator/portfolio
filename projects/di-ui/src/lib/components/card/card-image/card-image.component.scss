@@ -1,14 +1,8 @@
 .ui-image {
-    max-width: 90%;
+    width: 200px;
     height: auto;
     margin-right: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow:hidden;
-}
-
-@media(min-width: 760px) {
-    .ui-image {
-        width: 200px;
-    }
 }
