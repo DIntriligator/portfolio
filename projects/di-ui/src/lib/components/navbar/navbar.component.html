@@ -10,6 +10,9 @@
       >
         <span 
           class="ui-navbar-item"
+          [ngClass]="{
+            'ui-active': item.active
+          }"
           (click)="onNavItemClick(item)"
         >
           <span 
