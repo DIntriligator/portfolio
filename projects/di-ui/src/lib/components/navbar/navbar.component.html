@@ -1,0 +1,34 @@
+<div #navbar class="ui-navbar">
+  <ui-site-wrapper>
+    <h1 class="ui-navbar-title">
+      <span *ngTemplateOutlet="navTitle?.content"></span>
+    </h1>
+
+    <span class="ui-navbar-items">
+      <ng-container
+        *ngFor="let item of navItems"
+      >
+        <span 
+          class="ui-navbar-item"
+          (click)="onNavItemClick(item)"
+        >
+          <span 
+            *ngIf="item.icon"
+            class="fa fa-{{item.icon}}"
+          ></span>
+
+          <span class="ui-navbar-item-content hide-mobile">
+            <ng-container *ngTemplateOutlet="item?.content"></ng-container>
+          </span>
+        </span>
+      </ng-container>
+    </span>
+  </ui-site-wrapper>
+</div>
+
+<div 
+  class="ui-navbar-spacing"
+  [ngStyle]="{
+    'height': navbar.offsetHeight + 'px'
+  }"
+></div>

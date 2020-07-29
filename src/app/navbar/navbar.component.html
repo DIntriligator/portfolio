@@ -1,0 +1,26 @@
+<ui-navbar>
+  <ui-navbar-title>
+    DANIEL INTRILIGATOR
+  </ui-navbar-title>
+
+  <ui-navbar-item
+    [icon]="'user'"
+    (navItemClicked)="onItemClicked('about')"
+  >
+    About
+  </ui-navbar-item>
+
+  <ui-navbar-item
+    [icon]="'certificate'"
+    (navItemClicked)="onItemClicked('work')"
+  >
+    Work
+  </ui-navbar-item>
+
+  <ui-navbar-item
+    [icon]="'envelope'"
+    (navItemClicked)="onItemClicked('contact')"
+  >
+    Contact
+  </ui-navbar-item>
+</ui-navbar>
