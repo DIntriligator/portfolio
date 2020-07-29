@@ -3,12 +3,12 @@ import { SnNavigation, SnRouteSegments, SnRoute } from 'stratnav';
 import { Router } from '@angular/router';
 
 export const ROUTE_NAMES = {
-  about: '',
+  home: '',
   work: 'work',
   contact: 'contact'
 };
 
-export class AboutRoute implements SnRoute {
+export class HomeRoute implements SnRoute {
   getRouteSegments(): SnRouteSegments {
       return [];
   }
@@ -31,7 +31,7 @@ export class ContactRoute implements SnRoute {
 }
 
 export const ROUTES = {
-  about: new AboutRoute(),
+  home: new HomeRoute(),
   work: new WorkRoute(),
   contact: new ContactRoute()
 };

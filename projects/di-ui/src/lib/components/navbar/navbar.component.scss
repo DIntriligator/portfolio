@@ -36,6 +36,11 @@
         background-color: darken($primary, 10%);
         cursor: pointer !important;
     }
+
+    &.ui-active {
+        background-color: darken($primary, 10%);
+        cursor: default !important;
+    }
 }
 
 .ui-navbar-item-content {

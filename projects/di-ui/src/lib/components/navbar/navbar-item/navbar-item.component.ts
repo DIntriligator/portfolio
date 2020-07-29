@@ -13,6 +13,7 @@ export class UINavbarItemComponent {
   @Output() navItemClicked = new EventEmitter<void>();
 
   @Input() icon = '';
+  @Input() active = false;
 
   constructor() { }
 }

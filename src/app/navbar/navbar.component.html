@@ -4,14 +4,16 @@
   </ui-navbar-title>
 
   <ui-navbar-item
-    [icon]="'user'"
-    (navItemClicked)="onItemClicked('about')"
+    [icon]="'home'"
+    [active]="isActiveRoute('')"
+    (navItemClicked)="onItemClicked('home')"
   >
-    About
+    Home
   </ui-navbar-item>
 
   <ui-navbar-item
     [icon]="'certificate'"
+    [active]="isActiveRoute('work')"
     (navItemClicked)="onItemClicked('work')"
   >
     Work
@@ -19,6 +21,7 @@
 
   <ui-navbar-item
     [icon]="'envelope'"
+    [active]="isActiveRoute('contact')"
     (navItemClicked)="onItemClicked('contact')"
   >
     Contact
