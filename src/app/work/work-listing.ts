@@ -11,9 +11,9 @@ export const WORK_LISTING: WorkItem[] = [
     {
         image: '/assets/solcommander.png',
         icon: 'gamepad',
-        title: 'SOUL COMMANDER',
+        title: 'SOL COMMANDER',
         // tslint:disable-next-line:max-line-length
-        description: '<p>Sol Commander is a fluid micro tactics game in a turn based, pickup and play package.</p> <p>Working on Sol Commander has been a great way to spend some time working on a personal project. It is a collaboration with my colleague Alex Taber who is a master at designing game mechanics while I handled all of the GUI and graphics work. It was quite a challenge learning how game engines work and how to code for them but it was very rewarding when it all started to come together. Being mainly web developers, we implemented an online multiplayer mode.</p> <p>I also designed all of the promotional material such as the website, pins, banners and hats.</p>',
+        description: '<p>Sol Commander is a fluid micro tactics game in a turn based, pickup and play package.</p> <p>Working on Sol Commander has been a great way to spend some time working on a personal project. It is a collaboration with my colleague Alex Taber who is a master at designing game mechanics while I handled all of the GUI and graphics work. It was quite a challenge learning how game engines work and how to code for them, but it was very rewarding when it all started to come together. Being mainly web developers, we implemented an online multiplayer mode.</p> <p>I also designed all of the promotional material such as the website, pins, banners and hats.</p>',
         link: 'https://www.solcommandergame.com',
         buttonTitle: 'SOL COMMANDER WEBSITE'
     },
@@ -31,8 +31,8 @@ export const WORK_LISTING: WorkItem[] = [
         icon: 'keyboard-o',
         title: 'PEEKSKILL ARTS ALLIANCE',
         // tslint:disable-next-line:max-line-length
-        description: '<p>The Peekskill Arts Alliance is a small non profit group of artists. They were in need of a new website and came to me to get it done.</p> <p>There were a number of interesting requirements for this project. Before this website was made, all of the membership fees were tracked by hand and emails to members who lapsed on payments were written by hand. I was able to automate this entire process so no one had to work on that and they could just focus on doing good with the money raised.</p> <p>On their previous site they offered online galleries to artists who payed into a higher tier of membership but this process was also done by a board member who would collect and load all of the images. I was also able to automate this away by allowing members who payed more to manage their own gallery whenever they pleased by just logging in!</p>',
+        description: '<p>The Peekskill Arts Alliance is a small non-profit group of artists. They were in need of a new website and came to me to get it done.</p> <p>There were a number of interesting requirements for this project. Before this website was made, all of the membership fees were tracked by hand and emails to members who lapsed on payments were written by hand. I was able to automate this entire process so no one had to manually do it and they could just focus on doing good with the money raised.</p> <p>On their previous site they offered online galleries to artists who paid into a higher tier of membership but this process was also done by a board member who would collect and load all of the images. I was also able to automate this away by allowing members who paid more to manage their own gallery whenever they pleased by just logging in!</p>',
         link: 'https://www.peekskillartsalliance.org/',
-        buttonTitle: 'THE EMPLOYEE APP WEBSITE'
+        buttonTitle: 'PEEKSKILL ARTS ALLIANCE WEBSITE'
     },
 ];
