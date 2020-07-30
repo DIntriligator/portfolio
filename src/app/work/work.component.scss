@@ -1,0 +1,19 @@
+p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.title-card {
+    margin-bottom: 50px;
+    display: block;
+}
+
+@media(min-width: 900px) {
+    .flex {
+        display: flex
+    }
+    
+    ui-card-image {
+        display:inline
+    }  
+}

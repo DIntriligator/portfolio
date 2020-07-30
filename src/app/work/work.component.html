@@ -1,3 +1,39 @@
 <ui-site-wrapper>
-  <h1>Work</h1>
+  <ui-card class="title-card">
+    <ui-card-title>
+      <h1>
+        <span class="fa fa-certificate"></span>
+        SHOWCASE
+      </h1>
+    </ui-card-title>
+
+    <p>The following is a selection of some of the best work I've done over the past few years. Some are professional, some are passion projects, but all of them were worked on with love and care.</p>
+    <p>There is no greater joy than watching an idea become a reality and I've learned much on the journey's you see below.</p>
+  </ui-card>
+
+  <ui-card *ngFor="let item of workListing">
+    <ui-card-title>
+      <h3>
+        <span class="fa fa-{{item.icon}}"></span>
+        {{item.title}}
+      </h3>
+    </ui-card-title>
+
+    <div class="flex">
+      <ui-card-image
+        [source]="item.image"
+      ></ui-card-image>
+
+      <span [innerHTML]="item.description"></span>
+    </div>
+
+    <ui-button-area>
+      <ui-button
+        [theme]="'success'"
+        (buttonClick)="onExternalNavigation(item.link)"
+      >
+        {{item.buttonTitle}}
+      </ui-button>
+    </ui-button-area>
+  </ui-card>
 </ui-site-wrapper>

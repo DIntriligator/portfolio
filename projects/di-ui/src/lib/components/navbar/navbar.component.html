@@ -1,6 +1,9 @@
 <div #navbar class="ui-navbar">
   <ui-site-wrapper>
-    <h1 class="ui-navbar-title">
+    <h1 
+      class="ui-navbar-title"
+      (click)="onNavigateHome()"
+    >
       <span *ngTemplateOutlet="navTitle?.content"></span>
     </h1>
 

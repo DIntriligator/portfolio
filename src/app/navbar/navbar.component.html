@@ -5,7 +5,6 @@
 
   <ui-navbar-item
     [icon]="'home'"
-    [active]="isActiveRoute('')"
     (navItemClicked)="onItemClicked('home')"
   >
     Home
@@ -13,17 +12,16 @@
 
   <ui-navbar-item
     [icon]="'certificate'"
-    [active]="isActiveRoute('work')"
     (navItemClicked)="onItemClicked('work')"
   >
     Showcase
   </ui-navbar-item>
 
-  <ui-navbar-item
+  <!-- <ui-navbar-item
     [icon]="'envelope'"
     [active]="isActiveRoute('contact')"
     (navItemClicked)="onItemClicked('contact')"
   >
     Contact
-  </ui-navbar-item>
+  </ui-navbar-item> -->
 </ui-navbar>

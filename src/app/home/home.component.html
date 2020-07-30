@@ -3,7 +3,10 @@
 >
   <ui-card>
     <ui-card-title>
-      <h1>ABOUT ME</h1>
+      <h1>
+        <span class="fa fa-user"></span>
+        ABOUT ME
+      </h1>
     </ui-card-title>
 
     <div class="flex">
@@ -21,9 +24,29 @@
         </p>
 
         <p>
-          Please take a moment to go through the showcase to see some of my <b>accomplishments</b> and when you think you've seen enough to know I'd be a great addition to you team, please visit the contact page for a copy of my <b>resume</b>!
+          Please take a moment to go through the showcase to see some of my work and feel free to find me on LinkedIn, GitHub and GitLab.
         </p>
       </span>
     </div>
+
+    <ui-button-area>
+      <ui-button
+        [icon]="'linkedin'"
+        [socialColor]="'linkedin'"
+        (buttonClick)="onExternalNavigation('https://www.linkedin.com/in/daniel-intriligator-09b01a78/')"
+      ></ui-button>
+
+      <ui-button
+        [icon]="'github'"
+        [socialColor]="'github'"
+        (buttonClick)="onExternalNavigation('https://github.com/DIntriligator')"
+      ></ui-button>
+
+      <ui-button
+      [icon]="'gitlab'"
+      [socialColor]="'gitlab'"
+      (buttonClick)="onExternalNavigation('https://gitlab.com/DIntriligator')"
+    ></ui-button>
+    </ui-button-area>
   </ui-card>
 </ui-site-wrapper>

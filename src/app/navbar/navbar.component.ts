@@ -19,10 +19,6 @@ export class NavbarComponent {
     this.navigate(route);
   }
 
-  isActiveRoute(route: string): boolean {
-    return !!route ? this.router.url.search(route) > 0 : this.router.url === '/';
-  }
-
   private navigate(route: RouteType) {
     this.navigation.navigate(route);
   }

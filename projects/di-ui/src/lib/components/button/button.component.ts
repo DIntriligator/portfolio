@@ -9,6 +9,7 @@ import { DiColorType } from '../../types/color-types';
 })
 export class UIButtonComponent {
   @Input() theme: DiColorType = 'default';
+  @Input() socialColor = '';
   @Input() icon = '';
   @Input() disabled = false;
 
