@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { WORK_LISTING } from './work-listing';
 
 @Component({
   selector: 'app-work',
@@ -6,11 +7,14 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./work.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class WorkComponent implements OnInit {
+export class WorkComponent {
+
+  workListing = WORK_LISTING;
 
   constructor() { }
 
-  ngOnInit() {
+  onExternalNavigation(link: string) {
+    window.open(link, '_blank');
   }
 
 }

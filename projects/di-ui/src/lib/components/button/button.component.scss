@@ -42,3 +42,30 @@
         color: #fff;
     }
 }
+
+.ui-button.linkedin {
+    background-color: $linkedin;
+    color: #fff;
+    &:hover {
+        background-color: darken($linkedin, 5%);
+        color: #fff;
+    }
+}
+
+.ui-button.gitlab {
+    background-color: $gitlab;
+    color: #fff;
+    &:hover {
+        background-color: darken($gitlab, 5%);
+        color: #fff;
+    }
+}
+
+.ui-button.github {
+    background-color: $github;
+    color: #fff;
+    &:hover {
+        background-color: darken($github, 5%);
+        color: #fff;
+    }
+}

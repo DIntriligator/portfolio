@@ -4,7 +4,10 @@
     [ngClass]="{
         'primary': theme === 'primary',
         'danger': theme === 'danger',
-        'success': theme === 'success'
+        'success': theme === 'success',
+        'linkedin': socialColor === 'linkedin',
+        'gitlab': socialColor === 'gitlab',
+        'github': socialColor === 'github'
     }"
     [disabled]="disabled"
     (click)="onButtonClick()"
